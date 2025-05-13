@@ -1,0 +1,27 @@
+{
+    "estudiantes": [
+        {
+            "Id": "A1",
+            "nombre": "Andres",
+            "edad": 23,
+            "correo": "asdasd@gmail.com",
+            "Curso": "Fisica"
+        }
+    ],
+    "profesores": [
+        {
+            "Id": "B1",
+            "nombre": "Carlos",
+            "especialidad": "Fisica"
+        }
+    ],
+    "cursos": [
+        {
+            "nombre": "Fisica mecanica",
+            "profesor": "Carlos",
+            "estudiantes": [
+                "A1"
+            ]
+        }
+    ]
+}
