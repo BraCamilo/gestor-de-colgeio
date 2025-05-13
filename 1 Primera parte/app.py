@@ -1,4 +1,6 @@
+from flask import Flask
 import json
+
 # Definición de la clase Estudiantes
 class Estudiante:
     def __init__(self, Id, nombre, edad, correo, Curso=None):
@@ -84,6 +86,7 @@ class Curso:
     
 # Definicion del sistema escolar
 class SistemaEscolar:
+    
     def __init__(self):
         self.estudiantes_dict = {}
         self.profesores_dict = {}
@@ -135,8 +138,9 @@ class SistemaEscolar:
             self.cursos_dict[curso.Id] = curso
 
 
-def menu ():
+def menu():
     sistema = SistemaEscolar()
+
 
     while True:
         print("\n=== Menú del Sistema Escolar ===")
@@ -231,3 +235,4 @@ def menu ():
 # Ejecutar menú
 if __name__ == "__main__":
     menu()
+
