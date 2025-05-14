@@ -1,18 +1,22 @@
 from Modelos.persona import Persona
 
-class estudiante(Persona):
+class Estudiante(Persona):
     def __init__(self, Id, nombre, edad, correo, Curso=None):
         super().__init__(Id, nombre, edad, correo)
         self.Curso = Curso
 
     def to_dict(self):
-        data = super().to_dict()
-        data["Curso"] = self.Curso
-        return data
+        return {
+            "Id": self.Id,
+            "nombre": self.nombre,
+            "edad": self.edad,
+            "correo": self.correo,
+            "Curso": self.Curso,
+        }
     
     @staticmethod
     def from_dict(data):
-        return estudiante(
+        return Estudiante(
             data["Id"],
             data["nombre"],
             data["edad"],

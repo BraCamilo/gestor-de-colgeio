@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiante</title>
+    <link rel="stylesheet" href="/static/style_registro_es.css">
+</head>
+<body>
+    <header>
+        <h1>Crear Estudiante</h1> 
+    </header>
+    <main>
+        <section class="estudiante">           
+            <form  class="resgistrar_estudiante" method="POST">
+                <input class="resgistrar_estudiante_input" type="number" name="id" placeholder="Id" required>
+                <input class="resgistrar_estudiante_input" type="text" name="nombre" placeholder="Nombre" required>
+                <input class="resgistrar_estudiante_input" type="number" name="edad" placeholder="Edad" required>
+                <input class="resgistrar_estudiante_input" type="email" name="email" placeholder="Email" required>
+                <input class="resgistrar_estudiante_input" type="text" name="curso" placeholder="Curso" required>
+                <input class="resgistrar_estudiante_input" type="submit" value="Registrar Estudiante">
+            </form>
+        </section>
+    </main>    
+</body>
+</html>

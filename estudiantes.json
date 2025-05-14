@@ -1,0 +1,9 @@
+[
+    {
+        "Id": "123",
+        "nombre": "Brayan",
+        "edad": "26",
+        "correo": "ejemplo@ki.com",
+        "Curso": "mate"
+    }
+]
